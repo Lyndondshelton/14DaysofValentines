@@ -1,0 +1,409 @@
+
+/* Global css*/
+body{
+	margin:0;
+	padding:0;
+	background-color:#450000;
+}
+
+/*Header*/
+header{
+	width:100%;
+	height:700px;
+	margin:0;
+	padding:0;
+	background:black;
+	position:static;
+	top:0;
+	z-index:0;
+	overflow:hidden;
+}
+
+/*Video*/
+header #video{
+	width:2000px;
+	height:550px;
+	margin:auto;
+	position:relative;
+	top:0;
+	background:black;
+	z-index:0;
+}
+header video{
+	width:100%;
+	max-width:100%;
+	height:675px;
+	object-fit:fill;
+}
+header .gradient{
+	width:100%;
+	height:650px;
+	position:absolute;
+	top:0;
+	background-image:linear-gradient(to bottom, rgba(0,0,0,0.20), rgba(0,0,0,0));
+	z-index:2;
+}
+
+/*Text Box*/
+header #text-box{
+	width:700px;
+	position:relative;
+	top:-250px;
+	left:300px;
+	text-align:left;
+	color: #ffffff;
+	z-index:4;
+}
+
+/*Decoration*/
+.decoration{
+	width:100%;
+	height:40px;
+	background-color:#211;
+	z-index: 3;
+}
+.decoration#top{
+	position:absolute;
+	top:0px;
+}
+.decoration#mid{
+	position:relative;
+	top: -40px;
+}
+
+/*Clock*/
+.container#clock{
+	width:80%;
+	height:100px;
+	margin:auto;
+	text-align:center;
+}
+#clock h2 .flip-clock{
+	width:85px;
+	height:110px;
+	margin:0px 1px;
+	background:black;
+	border:0.5px solid white;
+	border-radius:7px;
+	box-shadow: 5px 5px 50px black;
+	object-fit:contain;
+	display: inline-block;
+	z-index:4;
+}
+
+/*Footer*/
+footer{
+	width: 100%;
+	height: 75px;
+	background: black;
+	color: #aa0000;
+	text-align: center;
+}
+
+/*text styling*/
+#text-box h1{
+	margin: 0;
+	padding: 10px 0px 0px;
+	font-size: 75px;
+	font-family: 'Dancing Script', cursive;
+}
+#text-box p{
+	margin: 0;
+	padding: 0;
+	font-size: 30px;
+	font-family: 'Raleway', sans-serif;
+}
+#text-box #medQueryPara, #text-box #medQuerydno{
+	display:none;
+}
+h2#countdown{
+	margin:0px;
+	color:white;
+	font-family: 'Aldrich', sans-serif;
+	line-height: 125px;
+	position:relative;
+	top:-35px;	
+}
+#clock h2 .digit{
+	padding-top:0;
+	font-size:100px;
+}
+#clock h2 .string{
+	font-size:20px;
+}
+#clock h2 .colon{
+	display:none;
+}
+footer h6{
+	margin: 0;
+	padding: 20px 0px 0px;
+	font-size: 20px;
+	font-family: 'Playfair Display', serif;
+}
+
+/* photo grid styling*/
+main .photo-grid{
+	width:95%;
+	margin:auto;
+	padding-top:20px;
+	display:flex;
+	flex-flow: row wrap;
+	align-items: center;
+}
+main .photo-box{
+	width:400px;
+	height:350px;
+	margin: 5px auto 5px auto;
+	padding:0px;
+	overflow: hidden;
+	align-items:center;
+}
+main .photo-box img{
+	width:400px;
+	height:300px;
+	object-fit: contain;
+}
+
+/*caption styling */
+.photo-box p{
+	width: 100px;
+	height: 40px;
+	margin:0px 0px 0px 150px;
+	padding:0;
+	text-align:center;
+	color:red;
+	font-size:20px;
+}
+/*button styling */
+.photo-box button{
+	width:100px; 
+	height: 40px;
+	margin-left:150px; 
+	padding:0;
+	background:none; 
+	color:red;
+	border:3px solid red; 
+	border-radius:20px; 
+	display:none;
+}
+.photo-box button:hover{
+	cursor:pointer;
+}
+/*Pop-Up */
+main #pop-up{
+	margin: -450px 0 0 -600px;
+	position:fixed;
+	top:50%;
+	left:50%;
+	z-index:200;
+	visibility: hidden;
+	background-color:black;
+}
+main #pop-up img{
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:300;
+	object-fit:contain;
+
+}
+#pop-up #popUpText{
+	color:#ff4444;
+	position:absolute;
+	bottom:0;
+	left:0;
+	z-index:400;
+	background-image:linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0.0));
+	width:100%;
+
+}
+#popUpText h5{
+	font-size: 45px;
+	padding: 0 0 20px 45px;
+	margin: 0;
+	text-decoration: underline;
+}
+#popUpText p{
+	font-size: 24px;
+	padding: 0 0 20px 45px;
+	margin: 0;
+}
+#closeButton{
+	position:absolute;
+	top:0;
+	right:20px;
+}
+#closeButton:hover{
+	cursor:pointer;
+}
+main #overlay{
+	width:100%;
+	height:100%;
+	background-color:#ff5172;
+	opacity:0.18;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:100;
+	visibility:hidden;
+}
+
+/*media query max-width:1292px*/
+@media (max-width:1292px){
+	header #text-box{
+		position:relative;
+		left:100px;
+	}
+	#text-box h1{
+		font-size: 45px;
+	}
+	#text-box p{
+		font-size: 25px;
+	}
+	.container#clock{
+		 width:80%;
+		 height:80px;
+	}
+	#clock h2 .flip-clock{
+		height: 80px;
+    	width: 55px;
+    	box-shadow: 5px 5px 50px black;
+		position:relative;
+		top:20px;
+	}
+	#clock h2{
+		color:white;
+		font-family: 'Aldrich', sans-serif;
+		line-height: 90px;
+		position:relative;
+		top:-35px;
+	}
+	#clock h2 .digit{
+		padding-top:0;
+		font-size:50px;
+	}
+	#clock h2 .string{
+		display:none;
+	}
+	#clock h2 .colon{
+		display:inline;
+		position:relative;
+		top:-5px;
+	}
+	main #pop-up{
+		width: 720px;
+		height: 540px;
+		margin: -270px 0 0 -360px;
+		position:fixed;
+		top:50%;
+		left:50%;
+		z-index:200;
+	}
+	#popUpText h5{
+		font-size: 38px;
+		padding: 0 0 20px 0;
+		margin: 0;
+		text-decoration: underline;
+	}
+	#popUpText p{
+		font-size: 16px;
+		padding: 0;
+		margin: 0;
+	}
+}
+
+/* media query max-width:750px*/
+@media (max-width:750px){
+	header{
+		height:500px;
+	}
+	header #video{
+		width:1000px;
+		position:relative;
+		top:0px;
+	}
+	header video{
+		width:100%;
+		object-fit:fill;
+
+	}
+	header #text-box{
+		width:400px;
+		margin:auto;
+		position:relative;
+		left:0px;
+		text-align:center;
+	}
+	#text-box h1{
+		font-size: 38px;
+	}
+	#text-box p{
+		font-size: 18px;
+	}
+	.container#clock{
+		 width: 375px;
+		 height: 60px;
+		 margin:auto;
+	}
+	#clock h2 .flip-clock{
+		height: 38px;
+    	width: 22px;
+    	box-shadow: 5px 5px 50px black;
+		position:relative;
+		top:30px;
+	}
+	#clock h2{
+		color:white;
+		font-family: 'Aldrich', sans-serif;
+		line-height: 45px;
+		position:relative;
+		top:-30px;
+	}
+	#clock h2 .digit{
+		padding-top:0;
+		font-size:20px;
+	}
+	#clock h2 .string{
+		display:none;
+	}
+	#clock h2 .colon{
+		display:inline;
+		position:relative;
+		top:20px;
+	}
+	/*main .photo-box{
+		width:350px;
+		height:300px;
+		margin: 5px auto 5px auto;
+		padding:0px;
+		overflow: hidden;
+		align-items:center;
+	}
+	main .photo-box img{
+		width:350px;
+		height:300px;
+	}*/
+	main #pop-up{
+		width: 500px;
+		height: 375px;
+		margin: -187.5px 0 0 -250px;
+		position:fixed;
+		top:50%;
+		left:50%;
+		z-index:200;
+	}
+	#popUpText h5{
+		font-size: 34px;
+		padding: 0 0 20px 0;
+		margin: 0;
+		text-decoration: underline;
+	}
+	#popUpText p{
+		font-size: 16px;
+		padding: 0;
+		margin: 0;
+	}
+}
+
+
+

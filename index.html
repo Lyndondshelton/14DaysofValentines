@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>The 14 Days of Valentines</title>
+		<meta name="keywords" content="Valentine's Day, Valentine, love, hearts, present, personal project, project, portfolio, coding, programming, HTML, CSS, JavaScript, "
+		<meta name="description" content="">
+		<meta name="author" content="Lyndon Shelton">
+		<link rel="stylesheet" href="./css/main.css">
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway|Dancing+Script" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+		<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+	</head>
+	<body>
+		<header>
+			<div class="decoration" id="top"></div>
+			<div class="gradient"></div>
+			<div id="video">
+				<video autoplay muted loop>
+					<source src="./vid/bannerVidFlowers.mp4" type="video/mp4"/> 
+					<source src="./vid/bannerVidFlowers.oog" type="video/oog"/>
+				</video>
+			</div>			
+			<div class="container" id="text-box">	
+				<h1>14 Days of Valentines</h1>
+				<p id="today"><span id="todaysDate"></span> <span id="currentTime"></span></p>				
+				<p id="dno"> <span id="comeback"></span> <span id="dnoDay"></span> <span id="dnoTime"></span></p>
+			</div>
+		</header>
+		<main>
+			<div class="decoration" id="mid">
+				<div class="container" id="clock">
+					<h2 id="countdown">
+						<span id="days"><span class="digit"><div class="flip-clock" id="firstDayDig"></div><div class="flip-clock" id="secDayDig"></div><div class="flip-clock" id="thirdDayDig"></div></span><span class="string"> days</span></span>
+						<span class="colon">:</span>
+					  	<span id="hours"><span class="digit"><div class="flip-clock" id="firstHourDig"></div><div class="flip-clock" id="secHourDig"></div></span><span class="string"> hr</span></span> 
+					  	<span class="colon">:</span>
+					  	<span id="minutes"><span class="digit"><div class="flip-clock" id="firstMinDig"></div><div class="flip-clock" id="secMinDig"></div></span><span class="string"> min</span></span>
+					  	<span class="colon">:</span> 
+					  	<span id="seconds"><span class="digit"><div class="flip-clock" id="firstSecDig"></div><div class="flip-clock" id="secSecDig"></div></span><span class="string"> sec</span></span>
+					</h2>
+				</div>
+			</div>
+			<div class="container">
+				<div class="photo-grid">
+					<div class="photo-box">
+						<img id="feb-1" src="./photoshop/heart-box-closed.png" alt="heart.png">
+						<p class="date">February 1</p>
+						<button type="button" id="button1" onclick="showPopUp(button1)">Open</button>
+					</div>
+					<div class="photo-box">
+						<img id="feb-2" src="./photoshop/heart-box-closed.png" alt="heart.png">
+						<p class="date">February 2</p>
+						<button type="button" id="button2" onclick="showPopUp(button2)">Open</button>
+					</div>
+					<div class="photo-box">
+						<img id="feb-3" src="./photoshop/heart-box-closed.png" alt="heart.png">
+						<p class="date">February 3</p>
+						<button type="button" id="button3" onclick="showPopUp(button3)">Open</button>
+					</div>
+					<div class="photo-box">
+						<img id="feb-4" src="./photoshop/heart-box-closed.png" alt="heart.png">
+						<p class="date">February 4</p>
+						<button type="button" id="button4" onclick="showPopUp(button4)">Open</button>
+					</div>
+					<div class="photo-box">
+						<img id="feb-5" src="./photoshop/heart-box-closed.png" alt="heart.png">
+						<p class="date">February 5</p>
+						<button type="button" id="button5" onclick="showPopUp(button5)">Open</button>
+					</div>
+					<div class="photo-box">
+						<img id="feb-6" src="./photoshop/heart-box-closed.png" alt="heart.png">
+						<p class="date">February 6</p>
+						<button type="button" id="button6" onclick="showPopUp(button6)">Open</button>
+					</div>
+					<div class="photo-box">
+						<img id="feb-7" src="./photoshop/heart-box-closed.png" alt="heart.png">
+						<p class="date">February 7</p>
+						<button type="button" id="button7" onclick="showPopUp(button7)">Open</button>
+					</div>
+					<div class="photo-box">
+						<img id="feb-8" src="./photoshop/heart-box-closed.png" alt="heart.png">
+						<p class="date">February 8</p>
+						<button type="button" id="button8" onclick="showPopUp(button8)">Open</button>
+					</div>
+					<div class="photo-box">
+						<img id="feb-9" src="./photoshop/heart-box-closed.png" alt="heart.png">
+						<p class="date">February 9</p>
+						<button type="button" id="button9" onclick="showPopUp(button9)">Open</button>
+					</div>
+					<div class="photo-box">
+						<img id="feb-10" src="./photoshop/heart-box-closed.png" alt="heart.png">
+						<p class="date">February 10</p>
+						<button type="button" id="button10" onclick="showPopUp(button10)">Open</button>
+					</div>
+					<div class="photo-box">
+						<img id="feb-11" src="./photoshop/heart-box-closed.png" alt="heart.png">
+						<p class="date">February 11</p>
+						<button type="button" id="button11" onclick="showPopUp(button11)">Open</button>
+					</div>
+					<div class="photo-box">
+						<img id="feb-12" src="./photoshop/heart-box-closed.png" alt="heart.png">
+						<p class="date">February 12</p>
+						<button type="button" id="button12" onclick="showPopUp(button12)">Open</button>
+					</div>
+					<div class="photo-box">
+						<img id="feb-13" src="./photoshop/heart-box-closed.png" alt="heart.png">
+						<p class="date">February 13</p>
+						<button type="button" id="button13" onclick="showPopUp(button13)">Open</button>
+					</div>
+					<div class="photo-box">
+						<img id="feb-14" src="./photoshop/heart-box-closed.png" alt="heart.png">
+						<p class="date"> February 14</p>
+						<button type="button" id="button14" onclick="showPopUp(button14)">Open</button>
+					</div>
+
+					
+				</div>	
+			</div>
+			<div id="pop-up">
+					<img id="puImg" src="" alt="image">
+					<div class="container" id="popUpText">
+						<h5 id="putHeader"></h5>
+						<p id="putPara"></p> 
+					</div>
+					<div id="closeButton">
+						<img src="./photoshop/close button.png" alt="close" onclick="hidePopUp()">
+					</div>
+			</div>
+			<div id="overlay" onclick="hidePopUp()"></div>	
+		</main>
+		<footer >
+			<h6>Happy Valentine's Day: 14 Days of Valentines &copy; 2018 <a href="https://github.com/Lyndondshelton">Lyndondshelton@github.com</a></h6>
+		</footer>
+		<script src="./js/script.js"></script>
+	</body>
+</html>
