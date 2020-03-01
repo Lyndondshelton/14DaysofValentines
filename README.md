@@ -1,0 +1,2 @@
+# 14DaysofValentines
+This was a Valentine's Day gift that I made for my girlfriend in 2019. This was also the very first Web Development project I made. The website is a picture gallery with 14 different locked gift boxes. For the first 14 days of the month of February the boxes open up at 12:00am each day until the 14th of February. You must wait until each day to open the box and view the picture inside with a discription. 
