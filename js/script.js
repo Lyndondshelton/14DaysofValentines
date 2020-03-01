@@ -49,6 +49,9 @@
 		day = "0"+day;
 	}
 	var year = d.getFullYear();
+	var nextYear = year + 1;
+	console.log("Year: "+year);
+	console.log("Next Year: "+ nextYear);
 	var todaysDate = monthName+" "+day+", "+year;
 
 setInterval(function(){
@@ -81,9 +84,10 @@ setInterval(function(){
 	document.getElementById("todaysDate").innerHTML = "Today is: "+todaysDate;
 }, 10);
 
+
 //unlock the specified locked boxes on a specific day
 switch(todaysDate){
-	case "February 01, 2020":
+	case "February 01, "+year:
 		document.getElementById("comeback").innerHTML = "Open:";
 		document.getElementById("dnoDay").innerHTML = monthName+" "+day;
 		document.getElementById("dnoTime").innerHTML = "";
@@ -93,7 +97,7 @@ switch(todaysDate){
 			document.getElementsByTagName("button")[i].style.display = "block";
 		}
 		break;
-	case "February 02, 2020":
+	case "February 02, "+year:
 		document.getElementById("comeback").innerHTML = "Open:";
 		document.getElementById("dnoDay").innerHTML = monthName+" "+day;
 		document.getElementById("dnoTime").innerHTML = "";
@@ -103,7 +107,7 @@ switch(todaysDate){
 			document.getElementsByTagName("button")[i].style.display = "block";
 		}
 		break;
-	case "February 03, 2020":
+	case "February 03, "+year:
 		document.getElementById("comeback").innerHTML = "Open:";
 		document.getElementById("dnoDay").innerHTML = monthName+" "+day;
 		document.getElementById("dnoTime").innerHTML = "";
@@ -113,7 +117,7 @@ switch(todaysDate){
 			document.getElementsByTagName("button")[i].style.display = "block";
 		}
 		break;
-	case "February 04, 2020":
+	case "February 04, "+year:
 		document.getElementById("comeback").innerHTML = "Open:";
 		document.getElementById("dnoDay").innerHTML = monthName+" "+day;
 		document.getElementById("dnoTime").innerHTML = "";
@@ -123,7 +127,7 @@ switch(todaysDate){
 			document.getElementsByTagName("button")[i].style.display = "block";
 		}
 		break;
-	case "February 05, 2020":
+	case "February 05, "+year:
 		document.getElementById("comeback").innerHTML = "Open:";
 		document.getElementById("dnoDay").innerHTML = monthName+" "+day;
 		document.getElementById("dnoTime").innerHTML = "";
@@ -133,7 +137,7 @@ switch(todaysDate){
 			document.getElementsByTagName("button")[i].style.display = "block";
 		}
 		break;
-	case "February 06, 2020":
+	case "February 06, "+year:
 		document.getElementById("comeback").innerHTML = "Open:";
 		document.getElementById("dnoDay").innerHTML = monthName+" "+day;
 		document.getElementById("dnoTime").innerHTML = "";
@@ -143,7 +147,7 @@ switch(todaysDate){
 			document.getElementsByTagName("button")[i].style.display = "block";
 		}
 		break;
-	case "February 07, 2020":
+	case "February 07, "+year:
 		document.getElementById("comeback").innerHTML = "Open:";
 		document.getElementById("dnoDay").innerHTML = monthName+" "+day;
 		document.getElementById("dnoTime").innerHTML = "";
@@ -153,7 +157,7 @@ switch(todaysDate){
 			document.getElementsByTagName("button")[i].style.display = "block";
 		}
 		break;
-	case "February 08, 2020":
+	case "February 08, "+year:
 		document.getElementById("comeback").innerHTML = "Open:";
 		document.getElementById("dnoDay").innerHTML = monthName+" "+day;
 		document.getElementById("dnoTime").innerHTML = "";
@@ -163,7 +167,7 @@ switch(todaysDate){
 			document.getElementsByTagName("button")[i].style.display = "block";
 		}
 		break;
-	case "February 09, 2020":
+	case "February 09, "+year:
 		document.getElementById("comeback").innerHTML = "Open:";
 		document.getElementById("dnoDay").innerHTML = monthName+" "+day;
 		document.getElementById("dnoTime").innerHTML = "";
@@ -173,7 +177,7 @@ switch(todaysDate){
 			document.getElementsByTagName("button")[i].style.display = "block";
 		}
 		break;
-	case "February 10, 2020":
+	case "February 10, "+year:
 		document.getElementById("comeback").innerHTML = "Open:";
 		document.getElementById("dnoDay").innerHTML = monthName+" "+day;
 		document.getElementById("dnoTime").innerHTML = "";
@@ -183,7 +187,7 @@ switch(todaysDate){
 			document.getElementsByTagName("button")[i].style.display = "block";
 		}
 		break;
-	case "February 11, 2020":
+	case "February 11, "+year:
 		document.getElementById("comeback").innerHTML = "Open:";
 		document.getElementById("dnoDay").innerHTML = monthName+" "+day;
 		document.getElementById("dnoTime").innerHTML = "";
@@ -193,7 +197,7 @@ switch(todaysDate){
 			document.getElementsByTagName("button")[i].style.display = "block";
 		}
 		break;
-	case "February 12, 2020":
+	case "February 12, "+year:
 		document.getElementById("comeback").innerHTML = "Open:";
 		document.getElementById("dnoDay").innerHTML = monthName+" "+day;
 		document.getElementById("dnoTime").innerHTML = "";
@@ -203,7 +207,7 @@ switch(todaysDate){
 			document.getElementsByTagName("button")[i].style.display = "block";
 		}
 		break;
-	case "February 13, 2020":
+	case "February 13, "+year:
 		document.getElementById("comeback").innerHTML = "Open:";
 		document.getElementById("dnoDay").innerHTML = monthName+" "+day;
 		document.getElementById("dnoTime").innerHTML = "";
@@ -213,7 +217,7 @@ switch(todaysDate){
 			document.getElementsByTagName("button")[i].style.display = "block";
 		}
 		break;
-	case "February 14, 2020":
+	case "February 14, "+year:
 		document.getElementById("comeback").innerHTML = "Happy Valentine's Day!!";
 		document.getElementById("dnoDay").innerHTML = monthName+" "+day;
 		document.getElementById("dnoTime").innerHTML = "";
@@ -225,11 +229,19 @@ switch(todaysDate){
 		break;
 		default:
 			document.getElementById("comeback").innerHTML = "Come back:";
-			document.getElementById("dnoDay").innerHTML = "February 01, 2021";
+			if(d.getMonth() >= 1 || (d.getMonth() == 1 && d.getDate() > 14)){
+				document.getElementById("dnoDay").innerHTML = "February 01, " + nextYear;
+				console.log("Month: " + d.getMonth() + ", Day: "+ d.getDate());
+			}else{
+				document.getElementById("dnoDay").innerHTML = "February 01, " + year;
+				console.log("Month: " + d.getMonth() + ", Day: "+ d.getDate());
+			}
 			document.getElementById("dnoTime").innerHTML = "12:00 AM";
 }
 
-var countDownDate = new Date("Feb 1, 2021 00:00:00").getTime();
+
+	var countDownDate = new Date("Feb 1, 2021 00:00:00").getTime();
+
 
 // Update the count down every .01 second
 setInterval(function() {
