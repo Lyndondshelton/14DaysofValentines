@@ -310,7 +310,7 @@ function showPopUp(x){
 	document.getElementById("pop-up").style.visibility = "visible";
 	switch(x.id){
 		case "button1":
-			heartPic[0].src = "./img/day0.png";
+			heartPic[0].src = "./img/day1.png";
 			document.getElementById("puImg").src = "./img/hairflip.jpg";
 			document.getElementById("pop-up").style.width = 1200+"px";
 			document.getElementById("pop-up").style.height = 800+"px";
@@ -321,7 +321,7 @@ function showPopUp(x){
 			document.getElementById("putPara").innerHTML = "Description_1";
 			break;
 		case "button2":
-			heartPic[1].src = "./img/day1.png";
+			heartPic[1].src = "./img/day2.png";
 			document.getElementById("puImg").src = "./img/piano.jpg";
 			document.getElementById("pop-up").style.width = 1200+"px";
 			document.getElementById("pop-up").style.height = 800+"px";
@@ -332,7 +332,7 @@ function showPopUp(x){
 			document.getElementById("putPara").innerHTML = "Description_2";
 			break;
 		case "button3":
-			heartPic[2].src = "./img/day2.png";
+			heartPic[2].src = "./img/day3.png";
 			document.getElementById("puImg").src = "./img/eyeroll.jpg";
 			document.getElementById("pop-up").style.width = 1200+"px";
 			document.getElementById("pop-up").style.height = 800+"px";
@@ -343,7 +343,7 @@ function showPopUp(x){
 			document.getElementById("putPara").innerHTML = "Description_3";
 			break;
 		case "button4":
-			heartPic[3].src = "./img/day3.png";
+			heartPic[3].src = "./img/day4.png";
 			document.getElementById("puImg").src = "./img/gettingready.jpg";
 			document.getElementById("pop-up").style.width = 1200+"px";
 			document.getElementById("pop-up").style.height = 690+"px";
@@ -420,7 +420,7 @@ function showPopUp(x){
 			document.getElementById("putPara").innerHTML = "Description_10";
 			break;
 		case "button11":
-			heartPic[10].src = "./img/day12.png";
+			heartPic[10].src = "./img/day11.png";
 			document.getElementById("puImg").src = "./img/carnival.jpg";
 			document.getElementById("pop-up").style.width = 1200+"px";
 			document.getElementById("pop-up").style.height = 800+"px";
@@ -431,7 +431,7 @@ function showPopUp(x){
 			document.getElementById("putPara").innerHTML = "Description_11";
 			break;
 		case "button12":
-			heartPic[11].src = "./img/day11.png";
+			heartPic[11].src = "./img/day12.png";
 			document.getElementById("puImg").src = "./img/myfave.jpg";
 			document.getElementById("pop-up").style.width = 1200+"px";
 			document.getElementById("pop-up").style.height = 800+"px";
